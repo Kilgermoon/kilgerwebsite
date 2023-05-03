@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <title>video.Ads</title>
+        <link rel="stylesheet" href="video.css">
+    </head>
+    <body>
+        <div id="top-section">
+        <div class="menu-bar">
+            <ul>
+                <li class="active"> <a href="kilger.html">Home<i class="fa fa-home"></i></a></li>
+                </ul>
+                </div>
+                </div>
+        <div class="container">
+            <h1>VIDEO ADS</h1>
+            <div class="row">
+                <div id="left-section">
+                <div class="col">
+                    <div class="feature-img">
+                    <img src="videos/African.jpg" width="100%" height="250">
+                    <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/first.mp4')">
+                    </div>
+                </div>
+            </div>
+            <div id="right-section">
+            <div class="col">
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="videos/black.jpg" width="35%" height="100%">
+                        <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/first.mp4')">
+                    </div>
+                    <p>Video Ads of local talent<br> and products show</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="videos/img1.jpg" width="35%" height="20%">
+                        <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/second.mp4')">
+                    </div>
+                    <p>Video Ads of local talent<br> and products show</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="videos/img2.jpg" width="35%" height="10%">
+                        <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/third.mp4')">
+                    </div>
+                    <p>Video Ads of local talent<br> and products show</p>
+                </div>
+                <div class="small-img-row">
+                    <div class="small-img">
+                        <img src="videos/img3.jpg" width="35%" height="10%">
+                        <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/fourth.mp4')">
+                    </div>
+                    <p>Video Ads of local talent<br> and products show</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="videos/D1.jpg" width="35%" height="10%">
+                            <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/fourth.mp4')">
+                        </div>
+                        <p>Video Ads of local talent<br> and products show</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="videos/D2.jpg" width="35%" height="10%">
+                            <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/D2.mp4')">
+                        </div>
+                        <p>Video Ads of local talent<br> and products show</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="videos/D3.jpg" width="35%" height="10%">
+                            <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/D3.mp4')">
+                        </div>
+                        <p>Video Ads of local talent<br> and products show</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="videos/D4.jpg" width="35%" height="10%">
+                            <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/D4.mp4')">
+                        </div>
+                        <p>Video Ads of local talent<br> and products show</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="videos/D5.jpg" width="35%" height="10%">
+                            <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/D5.mp4')">
+                        </div>
+                        <p>Video Ads of local talent<br> and products show</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="videos/D6.jpg" width="35%" height="10%">
+                            <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/D6.mp4')">
+                        </div>
+                        <p>Video Ads of local talent<br> and products show</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="videos/D7.jpg" width="35%" height="10%">
+                            <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/D7.mp4')">
+                        </div>
+                        <p>Video Ads of local talent<br> and products show</p>
+                    </div>
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="videos/D8.jpg" width="35%" height="10%">
+                            <img src="videos/play.png" width="10%" height="10%" class="play-btn" onclick="playVideo('videos/D8.mp4')">
+                        </div>
+                        <p>Video Ads of local talent<br> and products show</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src="videos/first.mp4" type="video/mp4">
+            </video>
+            <img src="videos/close.png" width="10%" height="5%" class="close-btn" onclick="stopVideo()">
+        </div>
+<script>
+    var videoPlayer = document.getElementById("videoPlayer");
+    var myVideo = document.getElementById("myVideo");
+
+    function stopVideo(){
+        videoPlayer.style.display = "none";
+    }
+    function playVideo(file){
+        myVideo.src = file;
+        videoPlayer.style.display = "block";
+    }
+
+
+
+</script>
+
+    </body>
+</html>
